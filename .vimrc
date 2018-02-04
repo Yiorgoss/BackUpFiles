@@ -36,6 +36,16 @@ set nu
 set clipboard=unnamed
 set backspace=indent,eol,start
 
+set hidden
+set nowrap
+set showmatch
+set hlsearch
+set incsearch
+set autoindent
+set copyindent
+set nobackup
+set noswapfile
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fold handle, python autoindent. python autocompete
 " check syntax, PEP8 check, colorscheme-zenburn
@@ -77,6 +87,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 """""""""""""""""""""""""""""""""""
