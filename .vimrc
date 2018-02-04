@@ -41,10 +41,10 @@ set nowrap
 set showmatch
 set hlsearch
 set incsearch
-set autoindent
-set copyindent
 set nobackup
 set noswapfile
+
+set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fold handle, python autoindent. python autocompete
@@ -66,6 +66,10 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"call plug#begin('~/.vim/plugged')
+"Plug 'powerline/powerline'
+"call plug#end()
+let g:powerline_pycmd="py3"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "PYTHON
